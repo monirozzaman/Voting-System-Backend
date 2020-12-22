@@ -46,6 +46,7 @@ public class VoteService {
             return new ResponseEntity(null, HttpStatus.NO_CONTENT);
         }
         for (Vote vote : voteList) {
+            System.out.println(vote.getSymbolName());
             if (vote.getSymbolName().equals("dhaka")) {
                 countFOrDhaKa = countFOrDhaKa+vote.getTotalVote();
             } else if(vote.getSymbolName().equals("chittagong")) {

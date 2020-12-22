@@ -24,7 +24,7 @@ public class VoteController {
     }
 
     @GetMapping("/result")
-    public ResponseEntity<List<VoteResultResponse>> addNewVote()
+    public ResponseEntity<List<VoteResultResponse>> getResult()
     {
         return voteService.getVoteResult();
     }
